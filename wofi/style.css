@@ -1,0 +1,91 @@
+
+* {
+    font-family: 'JetBrainsMono Nerd Font', 'Inter Display', sans-serif;
+    font-size: 13px;
+    outline: none;
+}
+
+window {
+    margin: 0px;
+    border: 2px solid rgba(234, 71, 82, 0.9);
+    border-radius: 12px;
+    background-color: rgba(10, 10, 15, 0.9);
+    animation: fadeIn 0.3s cubic-bezier(0.05, 0.7, 0.1, 1);
+}
+
+#outer-box {
+    margin: 8px;
+    border: none;
+    background-color: transparent;
+}
+
+#input {
+    margin: 5px;
+    padding: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.03);
+    color: #ffffff;
+    caret-color: #ea4752;
+}
+
+#input:focus {
+    border: 1px solid rgba(234, 71, 82, 0.5);
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+#inner-box {
+    margin: 5px;
+    border: none;
+    background-color: transparent;
+}
+
+#scroll {
+    margin: 2px;
+    border: none;
+}
+
+#text {
+    margin: 4px;
+    border: none;
+    color: rgba(255, 255, 255, 0.6);
+    transition: all 0.2s ease;
+}
+
+#entry {
+    padding: 8px;
+    margin: 2px 0px;
+    border-radius: 8px;
+    transition: all 0.2s ease;
+}
+
+#entry:selected {
+    background-color: rgba(234, 71, 82, 0.15);
+    border-left: 3px solid #ea4752;
+}
+
+#entry:selected #text {
+    color: #ffffff;
+    font-weight: 700;
+    margin-left: 8px;
+}
+
+#img {
+    margin-right: 12px;
+    opacity: 0.8;
+}
+
+#entry:selected #img {
+    opacity: 1;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
