@@ -1,4 +1,4 @@
-# Obsidian HUD Suite 🌑
+# Aesthetic Conky Clocks ✨
 
 An ultra-premium collection of modern, stunning Conky clock widgets designed for Linux desktops (Hyprland/Wayland optimized). 
 
